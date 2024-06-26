@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Checker</title>
+    <link rel="stylesheet" href="Fine_Checker_Project_CLISS.css">
+</head>
+
+<body>
+    <audio id="menu" src="menu.mp3" preload="auto">
+    </audio>
+    <audio id="button" src="button.mp3" preload="auto">
+    </audio>
+    <audio id="beep" src="beep.mp3" preload="auto">
+    </audio>
+    <nav>
+        <h1 id="FineCheckerh1">Fine checker</h1>
+        <div>
+            <label for="AllowedSpeed"><span class="AllowedSpeed">Allowed speed (km/h)</span></label>
+        </div>
+        <input type="number" id="AllowedSpeed" placeholder="Please specify the allowed speed">
+        <div>
+            <div>
+                <label for="DrivingSpeed"><span class="DrivingSpeed">Driving speed (km/h)
+                    </span></label>
+            </div>
+            <input type="number" placeholder="Please specify the driving speed" id="DrivingSpeed">
+            <div>
+                <label for="DrivingSpeedTolerance"><span class="DrivingSpeedTolerance">Driving speed (km/h) (Tolerance
+                        included)
+                    </span></label>
+            </div>
+            <input type="text" placeholder="The driving speed with tolerance" id="DrivingSpeedTolerance">
+            <label for="RoadType"><span id="RoadType">Please select the area type :</span></label>
+            <div class="DivArea">
+                <label for="BuiltUp" class="BuiltUp">Built-up area</label>
+                <input type="radio" id="BuiltUp" name="Radio"> <br>
+                <label for="OutsideBuiltUp" class="OutsideBuiltUp">Outside built-up area</label>
+                <input type="radio" id="OutsideBuiltUp" name="Radio"> <br>
+                <label for="Motorway" class="Motorway">Motorway</label>
+                <input type="radio" id="Motorway" name="Radio"> <br>
+                <label for="WetWeather" class="WetWeather" id="WetWeather2">Include wet weather</label>
+                <input type="checkbox" id="WetWeather" name="checkbox"> <br>
+            </div>
+        </div>
+        <button id="Submit">Submit</button>
+        <p id="Fine"></p>
+        </div>
+    </nav>
+    <script src="Fine_Checker_Project_CLISS.js"></script>
+</body>
+
+</html>
